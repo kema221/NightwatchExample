@@ -89,7 +89,7 @@ const config = {
 }
 module.exports = config;
 ```
-###Create Your First Test
+### Create Your First Test
 #### test\e2e\testDemo.js 
 ```js
 module.exports = {
@@ -101,17 +101,17 @@ module.exports = {
     }
 }
 ```
-###開始測試
+### 開始測試
 ```sh
 $ npm test
 ```
 
-###產生測試報告
+### 產生測試報告
 ```sh
 $ nightwatch-html-reporter -d ./reports
 ```
 
-###指定測試環境
+### 指定測試環境
 Nightwatch Test Runner 可使用 --env 代入指定的測試環境
 沒有指定環境，就是預設環境 default
 
@@ -128,7 +128,7 @@ $ nightwatch --env default
 nightwatch --env local
 ```
 
-###Nightwatch unit tests
+### Nightwatch unit tests
 The tests for Nightwatch are written using [Mocha](http://mochajs.org/).
 
 To run the complete test suite:
@@ -159,7 +159,7 @@ $ node nightwatch.js
 ```
 $ nightwatch -e default,chrome
 ```
-###Command-line Options
+### Command-line Options
 
 | Name        | Shortname | default           | description                                                                                                                                       |
 | ----------- | --------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -172,12 +172,18 @@ $ nightwatch -e default,chrome
 | --filter    | -f        |                   | Specify a filter (glob expression) as the file name format to use when loading the test files.                                                    |
 | --tags      | -a        |                   | Filter test modules by tags. Only tests that have the specified tags will be loaded.                                                              |
 
-###單一測試
+### 單一測試
 ```
 $ nightwatch -e chrome -g dlcs
 ```
-###Clone
+***
+### Clone this project for testing
 ```
-git clone
+$ git clone https://github.com/kema221/NightwatchExample.git
+
+$ npm install
+
+$ npm test
+
 ```
 
