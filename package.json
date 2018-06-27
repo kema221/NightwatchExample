@@ -1,0 +1,17 @@
+{
+  "name": "NightwatchExample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch --env local"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^2.40.0",
+    "nightwatch": "^0.9.21",
+    "nightwatch-html-reporter": "^2.0.5",
+    "selenium-server": "^3.12.0"
+  }
+}
